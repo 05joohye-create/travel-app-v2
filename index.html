@@ -4,7 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Travel App V3</title>
-  <link rel="stylesheet" href="style.css"/>
+
+  <!-- CSS (중요: / 없이 상대경로) -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -13,9 +15,7 @@
 
   <!-- HERO -->
   <header class="hero">
-    <div class="country">
-      🇦🇹 → 🇨🇿 → 🇭🇺
-    </div>
+    <div class="country">🇦🇹 → 🇨🇿 → 🇭🇺</div>
 
     <h1>유럽 여행</h1>
 
@@ -26,105 +26,80 @@
 
   <!-- WALLET -->
   <section class="card wallet">
-    <div class="card-title">💳 공동지갑 잔액</div>
+    <h2>💳 공동지갑</h2>
 
     <div class="balance">
-      €682.45
+      <div>트래블카드</div>
+      <strong>€682.45</strong>
     </div>
 
-    <div class="sub-balance">
-      ≈ ₩1,084,000
+    <div class="balance">
+      <div>현금</div>
+      <strong>€120</strong>
     </div>
+
+    <a href="#">다른 통화 보기</a>
   </section>
-   <!-- NEXT SCHEDULE -->
-  <section class="card">
+
+  <!-- NEXT SCHEDULE -->
+  <section class="card schedule">
     <h2>✈️ 다음 일정</h2>
 
-    <div class="schedule-title">
-      항공권 결제
-    </div>
-
-    <div class="schedule-time">
-      2026.10.31 09:20
-    </div>
-
-    <div class="badge">
-      D-8
+    <div class="item">
+      <div>항공권 결제</div>
+      <div>2026.10.31 09:20</div>
+      <div>D-8</div>
     </div>
   </section>
-
 
   <!-- SETTLEMENT -->
-  <section class="card split-card">
+  <section class="card settlement">
+    <h2>💰 정산</h2>
 
-    <div class="split-box">
-      <div class="name">주혜</div>
-      <div class="plus">+₩326,500</div>
+    <div class="row">
+      <div>주희</div>
+      <div>+₩326,500</div>
     </div>
 
-    <div class="split-box">
-      <div class="name">정은</div>
-      <div class="minus">-₩326,500</div>
+    <div class="row">
+      <div>정은</div>
+      <div>-₩326,500</div>
     </div>
-
   </section>
-
-
-  <!-- TODAY / TOTAL -->
-  <section class="grid">
-
-    <div class="card small">
-      <h3>💰 오늘 사용</h3>
-      <p>€36.80</p>
-    </div>
-
-    <div class="card small">
-      <h3>🧳 이번 여행</h3>
-      <p>€214.60</p>
-    </div>
-
-  </section>
-
 
   <!-- HISTORY -->
-  <section class="card">
+  <section class="card history">
     <h2>🧾 최근 거래</h2>
 
     <div class="row">
-      <span>🍜 라멘</span>
-      <b>-€18</b>
+      <span>🍜 라면</span>
+      <strong>-€2.30</strong>
     </div>
 
     <div class="row">
       <span>🚇 지하철</span>
-      <b>-€4.20</b>
+      <strong>-€4.20</strong>
     </div>
 
     <div class="row">
-      <span>☕ 카페</span>
-      <b>-€5.80</b>
+      <span>☕ 커피</span>
+      <strong>-€5.80</strong>
     </div>
   </section>
-    <!-- ADD BUTTON -->
-  <button class="add-btn">
-    ＋ 거래 등록
-  </button>
 
+</div>
 
-  <!-- BOTTOM NAV -->
-  <nav class="bottom">
+<!-- ➕ 플로팅 버튼 -->
+<div class="floating-btn">+</div>
 
-    <div class="active">🏠<br>홈</div>
-    <div>💳<br>거래</div>
-
-    <div class="plus-btn">＋</div>
-
-    <div>📅<br>일정</div>
-    <div>👥<br>정산</div>
-
-  </nav>
-
-</div> <!-- phone end -->
+<!-- 📱 하단 메뉴 -->
+<nav class="bottom-nav">
+  <div>🏠<br/>홈</div>
+  <div>💳<br/>거래</div>
+  <div class="active">➕</div>
+  <div>📅<br/>일정</div>
+  <div>👤<br/>더보기</div>
+</nav>
 
 <script src="app.js"></script>
 </body>
