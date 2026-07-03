@@ -1,4 +1,6 @@
-/* RESET */
+/* =======================
+   RESET
+======================= */
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +8,9 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
-/* BODY */
+/* =======================
+   BODY
+======================= */
 body {
   background: #f4f6fb;
   display: flex;
@@ -17,22 +21,28 @@ body {
   color: #222;
 }
 
-/* PHONE WRAPPER */
+/* =======================
+   PHONE CONTAINER
+======================= */
 .phone {
   width: 390px;
   max-width: 100%;
   border-radius: 30px;
   overflow: hidden;
+  background: #f4f6fb;
+  padding: 10px;
 }
 
-/* HERO */
+/* =======================
+   HERO (상단)
+======================= */
 .hero {
   background: linear-gradient(135deg, #6f4cff, #4b63ff);
   color: white;
   padding: 26px;
   border-radius: 28px;
   box-shadow: 0 15px 35px rgba(79, 78, 255, 0.25);
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .hero h1 {
@@ -61,34 +71,39 @@ body {
   font-weight: 600;
 }
 
-/* CARD */
-.card {
+/* =======================
+   CARD SYSTEM (핵심)
+======================= */
+.card,
+.wallet,
+section {
   background: white;
-  padding: 16px;
-  margin-bottom: 14px;
   border-radius: 18px;
+  padding: 16px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  margin-bottom: 14px;
 }
 
-.card h2 {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-/* ROW */
+/* =======================
+   ROW
+======================= */
 .row {
   display: flex;
   justify-content: space-between;
-  padding: 8px 0;
+  padding: 6px 0;
 }
 
-/* LINKS */
+/* =======================
+   LINKS
+======================= */
 a {
   color: #4b63ff;
   font-size: 13px;
 }
 
-/* FLOAT BUTTON */
+/* =======================
+   FLOAT BUTTON
+======================= */
 .floating-btn {
   position: fixed;
   bottom: 85px;
@@ -106,7 +121,9 @@ a {
   box-shadow: 0 12px 25px rgba(75,99,255,0.4);
 }
 
-/* BOTTOM NAV */
+/* =======================
+   BOTTOM NAV
+======================= */
 .bottom-nav {
   position: fixed;
   bottom: 0;
@@ -129,4 +146,11 @@ a {
 .bottom-nav .active {
   color: #4b63ff;
   font-weight: 700;
+}
+
+/* =======================
+   SCROLL FIX (중요)
+======================= */
+html, body {
+  height: 100%;
 }
