@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Travel App V3</title>
 
-  <!-- CSS (중요: / 없이 상대경로) -->
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -41,15 +40,31 @@
     <a href="#">다른 통화 보기</a>
   </section>
 
-  <!-- NEXT SCHEDULE -->
-  <section class="card schedule">
-    <h2>✈️ 다음 일정</h2>
+  <!-- NEXT SCHEDULE (🔥 업그레이드 버전) -->
+  <section class="card next-schedule">
 
-    <div class="item">
-      <div>항공권 결제</div>
-      <div>2026.10.31 09:20</div>
-      <div>D-8</div>
+    <div class="section-title">✈️ 다음 일정</div>
+
+    <div class="schedule-card">
+
+      <div class="schedule-main">
+        항공권 결제
+      </div>
+
+      <div class="schedule-date">
+        2026.10.31 09:20
+      </div>
+
+      <div class="schedule-dday">
+        D-8
+      </div>
+
+      <div class="schedule-sub">
+        유럽 여행 / 공동 지출 준비
+      </div>
+
     </div>
+
   </section>
 
   <!-- SETTLEMENT -->
@@ -102,5 +117,6 @@
 </nav>
 
 <script src="app.js"></script>
+
 </body>
 </html>
