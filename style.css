@@ -27,4 +27,205 @@ body {
   border-radius: 28px;
   box-shadow: 0 15px 35px rgba(79, 78, 255, 0.25);
 }
-...
+
+.hero h1 {
+  font-size: 30px;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.country {
+  opacity: 0.9;
+  font-size: 14px;
+}
+
+.date {
+  margin-top: 6px;
+  opacity: 0.9;
+  font-size: 14px;
+}
+
+.d-day {
+  display: inline-block;
+  margin-top: 12px;
+  background: rgba(255,255,255,0.2);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 16px;
+  margin-top: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.card h2 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 13px;
+  color: #777;
+}
+
+.balance {
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.sub-balance {
+  color: #888;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+/* NEXT */
+.schedule-title {
+  font-size: 17px;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.schedule-time {
+  color: #666;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 10px;
+  background: #4b63ff;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* SPLIT */
+.split-card {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  gap: 10px;
+}
+
+.split-box {
+  flex: 1;
+  padding: 8px;
+}
+
+.name {
+  font-size: 13px;
+  color: #666;
+}
+
+.plus {
+  color: #1a9c4a;
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+.minus {
+  color: #e53935;
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.small {
+  padding: 14px;
+}
+
+.small h3 {
+  font-size: 13px;
+  color: #777;
+}
+
+.small p {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 6px;
+}
+
+/* HISTORY (진짜 앱 스타일 핵심) */
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+/* BUTTON */
+.add-btn {
+  width: 100%;
+  margin-top: 16px;
+  padding: 16px;
+  border: none;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #6f4cff, #4b63ff);
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: 0 10px 20px rgba(75, 99, 255, 0.25);
+}
+
+/* BOTTOM NAV (완전 앱 느낌 핵심) */
+.bottom {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 14px;
+
+  width: 390px;
+  max-width: 95%;
+
+  background: white;
+  border-radius: 22px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 10px 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.bottom div {
+  text-align: center;
+  font-size: 11px;
+  color: #777;
+}
+
+.plus-btn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6f4cff, #4b63ff);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  margin-top: -28px;
+  box-shadow: 0 10px 20px rgba(75, 99, 255, 0.35);
+}
