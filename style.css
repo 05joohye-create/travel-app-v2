@@ -9,7 +9,7 @@ body {
   background: #f4f6fb;
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 16px;
   color: #222;
 }
 
@@ -23,8 +23,8 @@ body {
 .hero {
   background: linear-gradient(135deg, #6f4cff, #4b63ff);
   color: white;
-  padding: 24px;
+  padding: 26px;
   border-radius: 28px;
-  box-shadow: 0 12px 30px rgba(79, 78, 255, 0.25);
+  box-shadow: 0 15px 35px rgba(79, 78, 255, 0.25);
 }
 ...
