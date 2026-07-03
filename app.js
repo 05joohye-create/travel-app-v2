@@ -1,22 +1,21 @@
-console.log("Travel App V3 Loaded");
+let transactions = JSON.parse(localStorage.getItem("transactions")) || [];
 
-// 거래 추가 버튼 클릭
+// DOM
 const btn = document.querySelector(".add-btn");
+const historyCard = document.querySelector(".card:last-child");
 
-btn.addEventListener("click", () => {
-  const item = prompt("거래 항목 입력 (예: 라멘)");
-  const price = prompt("금액 입력 (예: 18)");
+// 저장
+function saveData() {
+  localStorage.setItem("transactions", JSON.stringify(transactions));
+}
 
-  if (!item || !price) return;
+// 렌더링
+function render() {
+  historyCard.innerHTML = "<h2>🧾 최근 거래</h2>";
 
-  const list = document.querySelector(".card:last-child");
+  let total = 0;
 
-  const row = document.createElement("div");
-  row.className = "row";
-  row.innerHTML = `
-    <span>🍜 ${item}</span>
-    <b>-€${price}</b>
-  `;
+  transactions.forEach((t, index) => {
+    total += Number(t.amount);
 
-  list.appendChild(row);
-});
+    const row = document.createElement(...
